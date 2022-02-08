@@ -18,4 +18,20 @@ var slide_hero = new Swiper(".slide-principal", {
         delay: 5000,
         disableOnInteraction: false, // quando passar passar os slide manualmente para não desativar o autoplay(por padrão TRUE ele desativa)
     }
-  });
+});
+
+const allFilters = document.querySelectorAll('.js-nav-games li a');
+const allTabPaneGames = document.querySelectorAll('.tab-pane-games');
+console.log(allTabPaneGames);
+allFilters.forEach((item, index) => {
+    item.addEventListener('click', (event) =>{
+        event.preventDefault();
+        allFilters.forEach((item, index) => {
+            console.log(allTabPaneGames[index])
+            allTabPaneGames[index].classList.remove('active');
+            item.classList.remove('active');
+        });
+        item.classList.add('active');
+        allTabPaneGames[index].classList.add('active')
+    } );
+});

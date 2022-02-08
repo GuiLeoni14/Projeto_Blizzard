@@ -157,6 +157,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        margin-bottom: 7.8rem;
         .left-top{
             display: flex;
             align-items: flex-start;
@@ -193,6 +194,17 @@
                     &:not(:first-child){
                         margin-left: 2.4rem;
                     }
+                    a{
+                        img{
+                            opacity: 0.5;
+                            transition: opacity .3s;
+                        }
+                        &.active{
+                            img{
+                                opacity: 1;
+                            }
+                        }
+                    }
                 }
             }
             .btn-all-games{
@@ -208,5 +220,51 @@
                 }
             }
         }
+    }
+    .tab-games-content{
+        .tab-pane-games{
+            display: none;
+            &.active{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 4.7rem 3.2rem;
+                animation: fadeUp .4s forwards;
+            }
+            .card-all-games{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                height: 38.4rem;
+                max-width: 28rem;
+                border: 0.15rem solid $neutral-500;
+                border-radius: 0.4rem;
+                span{
+                    margin-top: 3.4rem;
+                    display: flex;
+                    align-items: center;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    color: #FFFFFF;
+                    img{
+                        margin-right: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
