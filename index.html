@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/plugins.css">
     <title>Projeto - Blizzard</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -21,10 +23,10 @@
                 <nav>
                     <ul>
                         <li><a href="">Jogos
-                            <img src="./src/img/icon-arrow-down.svg" alt="">
-                        </a></li>
+                                <img src="./src/img/icon-arrow-down.svg" alt="">
+                            </a></li>
                         <li><a href="">Esportes
-                            <img src="./src/img/icon-arrow-down.svg" alt=""></a></li>
+                                <img src="./src/img/icon-arrow-down.svg" alt=""></a></li>
                         <li><a href="">Loja</a></li>
                         <li><a href="">Notícias</a></li>
                         <li><a href="">Suporte</a></li>
@@ -38,6 +40,25 @@
         </div>
     </header>
     <section class="s-hero">
+        <div class="slide-thumbnail">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./src/img/logo-small-diablo-iv.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./src/img/logo-small-heathstone.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./src/img/logo-small-ww.png" alt="">
+                </div>
+                <div class="swiper-slide disable">
+                    <img src="./src/img/logo-small-starfield.png" alt="">
+                </div>
+                <div class="swiper-slide disable">
+                    <img src="./src/img/logo-small-diablo.png" alt="">
+                </div>
+            </div>
+        </div>
         <div class="slide-principal">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-01">
@@ -84,8 +105,35 @@
                             <div class="video">
                                 <span>Assista o trailer</span>
                                 <button class="btn-video">
-                                    <img src="./src/img/thumbnail-diablo.png" class="thumb default" alt="">
-                                    <img src="./src/img/gifs/giphy.gif" class="thumb hover" alt="">
+                                    <img src="./src/img/thumbnail-heathstone.png" class="thumb default" alt="">
+                                    <img src="./src/img/gifs/heartstone.gif" class="thumb hover" alt="">
+                                    <div class="icon">
+                                        <img src="./src/img/icon-play.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide-03">
+                    <div class="container">
+                        <div class="left-content">
+                            <h2>Desbrave as Terras Sombrias em Shadowlands! </h2>
+                            <p>O que jaz além do mundo que você conhece?</p>
+                            <button href="" class="btn btn-primary">
+                                <img src="./src/img/icon-login.svg" alt="">
+                                Reserve agora na pré-venda
+                            </button>
+                        </div>
+                        <div class="right-content">
+                            <div class="logo">
+                                <img src="./src/img/logo-default-ww.png" alt="">
+                            </div>
+                            <div class="video">
+                                <span>Assista o trailer</span>
+                                <button class="btn-video">
+                                    <img src="./src/img/thumbnail-ww.png" class="thumb default" alt="">
+                                    <img src="./src/img/gifs/bolvar-sylvanas.gif" class="thumb hover" alt="">
                                     <div class="icon">
                                         <img src="./src/img/icon-play.svg" alt="">
                                     </div>
@@ -97,11 +145,43 @@
             </div>
         </div>
     </section>
-    <div class="container">
-        <h1>Projeto Blizzard</h1>
-        </a>
-    </div>
+    <section class="s-games">
+        <div class="container">
+            <div class="top">
+                <div class="left-top">
+                    <span>GAMES</span>
+                    <h2>Jogos
+                        exclusivos</h2>
+                </div>
+                <div class="right-top">
+                    <ul class="js-nav-games">
+                        <li><a href="">
+                                <img src="./src/img/icon-logo.svg" alt="">
+                            </a></li>
+                        <li><a href="">
+                                <img src="./src/img/icon-switch.svg" alt="">
+                            </a></li>
+                        <li>
+                            <a href="">
+                                <img src="./src/img/icon-xbox.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./src/img/icon-playstation.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn-all-games">
+                        <img src="./src/img/icon-group-blue.svg" alt="">
+                        Ver todos jogos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./src/js/plugins.js"></script>
     <script src="./src/js/all.js"></script>
 </body>
+
 </html>
